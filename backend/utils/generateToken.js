@@ -1,5 +1,5 @@
 import jwt from "jsonwebtoken";
-import protectRoute from "../middleware/protectRoute.js";
+
 
 const generateTokenAndSetCookie = (userId,res)=>{
    const token= jwt.sign({userId},process.env.JWT_SECRET,{
